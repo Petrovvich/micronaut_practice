@@ -6,7 +6,7 @@ import io.micronaut.http.annotation.Get
 import io.micronaut.http.annotation.Produces
 
 @Controller(value = "/demo")
-object DemoController {
+class DemoController {
 
     @Get(value = "/")
     @Produces(MediaType.APPLICATION_JSON)
