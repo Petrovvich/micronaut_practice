@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: ru.petrovich
+---
+testFramework: kotlintest
+sourceLanguage: kotlin
