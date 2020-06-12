@@ -10,3 +10,20 @@ datasources:
     username: 'micronaut'
     password: 'micronaut'
     driverClassName: 'postgresql'
+
+jpa:
+  default:
+    packages-to-scan:
+      - 'ru.petrovich.domain'
+    properties:
+      hibernate:
+        physical_naming_strategy: "io.micronaut.data.hibernate.naming.DefaultPhysicalNamingStrategy"
+        hbm2ddl:
+          auto: validate
+        show_sql: true
+
+liquibase:
+  datasources:
+    enabled: false
+    default:
+      change-log: 'classpath:changelogs/changelog.yml'
