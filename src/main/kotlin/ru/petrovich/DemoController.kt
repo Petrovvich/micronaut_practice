@@ -10,7 +10,7 @@ class DemoController {
 
     @Get(value = "/")
     @Produces(MediaType.APPLICATION_JSON)
-    fun demoGet(): String {
-        return "Demo Hi!"
+    fun demoGet(): ResponseDto {
+        return ResponseDto("Demo Hi!")
     }
 }
